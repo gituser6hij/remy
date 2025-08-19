@@ -33,7 +33,7 @@ export default function Navbar() {
           {/* Logo/Brand */}
           <div className="flex-shrink-0">
             <Link href="/" className="text-xl font-bold text-gray-800">
-              [Musician Name]
+              Remy Vrignaud
             </Link>
           </div>
 

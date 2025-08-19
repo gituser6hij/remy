@@ -1,4 +1,4 @@
 # remy
 Remy is a musician
 
-Location: Corralejo
+Location: Corralejo!

@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button";
 
 export default function Services() {
   const services = [
-    { title: "Live Performances", description: "Book [Musician Name] for events, weddings, or concerts.", icon: "🎤" },
-    { title: "Music Lessons", description: "Learn guitar, piano, or vocals with personalized lessons.", icon: "🎸" },
+    { title: "Live Performances", description: "Book for concerts, weddings, or events.", icon: "🎤" },
+    { title: "Music Lessons", description: "Personalized guitar, piano, or vocal lessons.", icon: "🎸" },
     { title: "Studio Recording", description: "Professional session work for your tracks.", icon: "🎙️" },
   ];
 
@@ -13,7 +13,7 @@ export default function Services() {
       <h1 className="text-4xl font-bold text-center mb-8">Our Services</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {services.map((service, index) => (
-          <Card key={index} className="shadow-lg">
+          <Card key={index} className="shadow-lg hover:shadow-xl transition-shadow">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <span className="text-2xl">{service.icon}</span>
@@ -22,7 +22,9 @@ export default function Services() {
             </CardHeader>
             <CardContent>
               <p className="mb-4">{service.description}</p>
-              <Button variant="outline">Learn More</Button>
+              <Button variant="outline" asChild>
+                <a href="/contact">Book Now</a>
+              </Button>
             </CardContent>
           </Card>
         ))}

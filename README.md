@@ -1,4 +1,5 @@
-# remy
-Remy is a musician
+# Front end website about Remy
 
-Location: Corralejo!
+Remy is a musician in Corralejo, Spain.
+
+This is the website that present his services and story.
